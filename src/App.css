@@ -329,6 +329,40 @@ body {
   margin: 12px 18px 0px 18px;
 }
 
+.play-btn{
+  position: absolute;
+  background-color: rgb(109, 229, 109);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+  top:18vh;
+  right: 22px;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.card:hover{
+  background-color: var(--social-media-bg-color);
+  box-shadow: 0 0 5px white;
+}
+.card:hover .play-btn{
+  opacity: 1;
+  top:110px;
+}
+.play-btn:hover{
+  transform: scale(1.05);
+}
+
+#play{
+  width: 20px;
+}
+#play:hover{
+  transform: scale(1.05);
+}
+
 .img-tittle {
   height: 13px;
   width: 150px;

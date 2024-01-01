@@ -1,10 +1,14 @@
 import React from "react";
+import play from "../images/play.png"
 
 
 export default function PlayListCard(props) {
   return (
     <>
-      <div className="card">
+      <div className="card cursor">
+        <div className="play-btn cursor">
+          <img src={play}  alt="play" id="play"/>
+        </div>
         <div className="img-container">
           <img src={props.imgURL} alt="Peaceful piano" />
         </div>
