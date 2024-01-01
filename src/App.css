@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-bg-color: #121212;
+  --white-text-color: white;
+  --btn-bg-color: #0000000f;
+  --white-bg-color: white;
+  --black-text-color: black;
+  --gray-text-color: #b3b3b3;
+  --playlist-bg-color: #1e1e1e;
+  --card-bg-color: #161616;
+  --secondary-playlist-color: #131312;
+  --social-media-bg-color: #292929;
+}
+
+.g-15 {
+  gap: 15px;
+}
+
+/* utility css classes */
+
+.br-red {
+  border: 2px solid red;
+}
+
+.flex {
+  display: flex;
+}
+
+.m-2 {
+  margin: 0 5px;
+}
+
+.rounded {
+  border-radius: 7px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.item-align {
+  align-items: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.c-bl {
+  color: black;
+}
+
+/* End of utility css classes */
+
+body {
+  background-color: black;
+  color: white;
+  height: 97vh;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 25vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.sideNavbar {
+  width: 25vw;
+  height: 24vh;
+  padding: 0px 0px 10px 0;
+  background-color: var(--primary-bg-color);
+}
+
+.logo {
+  width: 120px;
+  height: 35px;
+  margin: 20px 100px 30px 20px;
+}
+
+.home {
+  width: 100%;
+  margin: 20px 20px;
+}
+
+.search {
+  width: 100%;
+  margin: 10px 20px;
+}
+
+.img-resize {
+  width: 18px;
+  height: 18px;
+}
+
+.library {
+  width: 25vw;
+  height: 70vh;
+  position: relative;
+  background-color: var(--primary-bg-color);
+}
+
+.lib-header {
+  justify-content: space-between;
+}
+
+.lib-tittle {
+  width: 160px;
+  filter: brightness(50%);
+}
+
+.lib-tittle:hover {
+  filter: brightness(100%);
+}
+
+.lib-img {
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+}
+
+.plus {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  margin: 20px;
+  filter: invert(0.5);
+}
+
+.plus:hover {
+  filter: invert(1);
+  box-shadow: 0 0 20px white;
+}
+
+.footer {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 4vw;
+  margin: 20px auto;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: auto 20px;
+}
+
+.links > a:hover {
+  transition: 1s;
+  text-decoration: underline;
+}
+
+.footer div > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.language-btn {
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn {
+  width: 100px;
+  padding: 6px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background: transparent;
+  color: var(--white-text-color);
+  transition: 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.right {
+  width: 73vw;
+  height: 95vh;
+}
+
+.right-bottom{
+  height: 100vh;
+  margin-bottom: 200px;
+  /* overflow: hidden; */
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary-bg-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows {
+  width: 5vw;
+  font-size: 1.5rem;
+  justify-content: center;
+  gap: 10px;
+  margin: 0px 10px;
+}
+.left-arrow {
+  width: 25px;
+  filter: invert(0.7);
+  transform: rotate(180deg);
+  border-radius: 50%;
+  background-color: var(--btn-bg-color);
+  padding: 5px;
+}
+.right-arrow {
+  width: 25px;
+  filter: invert(0.7);
+  border-radius: 50%;
+  background-color: var(--btn-bg-color);
+  padding: 5px;
+}
+
+.signUp {
+  width: 100px;
+  padding: 6px;
+  margin: 11px;
+  border-radius: 15px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: var(--white-text-color);
+  transition: 0.3s ease;
+  filter: brightness(70%);
+}
+.signUp:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.login {
+  width: 100px;
+  padding: 11px 24px;
+  margin-right: 30px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: var(--black-text-color);
+  background-color: var(--white-bg-color);
+  transition: 0.3s ease;
+}
+
+.login:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px white;
+}
+
+/* PlayList css */
+
+
+.playList {
+  width: 100%;
+  height: 53%;
+  background: linear-gradient(
+    var(--playlist-bg-color),
+    var(--secondary-playlist-color)
+  );
+  position: relative;
+}
+
+
+.playList-container {
+  justify-content: space-between;
+}
+
+
+.plyList-head {
+  margin: 10px 24px;
+}
+
+
+.plyList-head .tittle {
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+
+.plyList-head .tittle:hover {
+  text-decoration: underline;
+}
+
+.show-more {
+  margin: 10px 24px;
+}
+
+.show-more > a {
+  color: var(--gray-text-color);
+  text-decoration: none;
+}
+.show-more > a:hover {
+  text-decoration: underline;
+}
+
+/* Card Css */
+
+.card {
+  width: 200px;
+  height: 280px;
+  background-color: var(--card-bg-color);
+  margin: 25px 0px 30px 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card .img-container img {
+  width: calc(150px + 12px);
+  height: calc(150px + 12px);
+  margin: 12px 18px 0px 18px;
+}
+
+.img-tittle {
+  height: 13px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 12px 12px 12px;
+}
+
+.img-desc {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 18px 12px 12px 12px;
+  color: var(--gray-text-color);
+}
+
+
+/* Contacts Css */
+.playListBottom{
+  background-color: var(--primary-bg-color);
+height: 55%;
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+
+}
+
+.contacts{
+  gap: 10vw;
+  padding-top: 24px;
+}
+
+.contacts-right{
+  margin: 34px;
+  gap: 10vw;
+  line-height: 2rem;
+
+}
+.contacts-right ul h3{
+  font-size: 16px;
+}
+.contacts-right ul li{
+  list-style: none;
+  line-height: 2.2rem;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--gray-text-color);
+}
+
+.contacts-right ul li:hover{
+  color: var(--white-text-color);
+  text-decoration: underline;
+}
+
+.social-media{
+  margin: 34px;
+  gap: 1vw;
+  margin-left: 70px; ;
+}
+
+.social-media a i{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: var(--social-media-bg-color);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-media a{
+  text-decoration: none;
+  color: var(--white-text-color);
+  font-size: 16px;
+}
+
+.social-media a i:hover{
+  background-color: gray;
+}
+
+
+.separation{
+  border: 1px solid gray;
+  filter: brightness(30%);
+}
+
+.separation{
+  width: 68vw;
+  margin-left: 20px;
+}
+.coptright{
+  margin: 34px 24px ;
+  font-size: 14px;
+  color: var(--gray-text-color);
+
+}
+
+
