@@ -64,6 +64,7 @@ body {
 
 .container {
   display: flex;
+  position: relative;
 }
 
 .left {
@@ -72,6 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 7px;
+  position: sticky;
 }
 
 .sideNavbar {
@@ -194,7 +196,7 @@ body {
   height: 95vh;
 }
 
-.right-bottom{
+.right-bottom {
   height: 100vh;
   margin-bottom: 200px;
   /* overflow: hidden; */
@@ -206,6 +208,8 @@ body {
   background-color: var(--primary-bg-color);
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  z-index: 10;
 }
 
 .arrows {
@@ -269,7 +273,6 @@ body {
 
 /* PlayList css */
 
-
 .playList {
   width: 100%;
   height: 53%;
@@ -280,16 +283,13 @@ body {
   position: relative;
 }
 
-
 .playList-container {
   justify-content: space-between;
 }
 
-
 .plyList-head {
   margin: 10px 24px;
 }
-
 
 .plyList-head .tittle {
   color: var(--white-text-color);
@@ -329,7 +329,7 @@ body {
   margin: 12px 18px 0px 18px;
 }
 
-.play-btn{
+.play-btn {
   position: absolute;
   background-color: rgb(109, 229, 109);
   width: 35px;
@@ -339,27 +339,27 @@ body {
   align-items: center;
   border-radius: 50%;
   padding: 8px;
-  top:18vh;
+  top: 18vh;
   right: 22px;
   opacity: 0;
   transition: 0.3s ease-in;
 }
-.card:hover{
+.card:hover {
   background-color: var(--social-media-bg-color);
   box-shadow: 0 0 5px white;
 }
-.card:hover .play-btn{
+.card:hover .play-btn {
   opacity: 1;
-  top:110px;
+  top: 110px;
 }
-.play-btn:hover{
+.play-btn:hover {
   transform: scale(1.05);
 }
 
-#play{
+#play {
   width: 20px;
 }
-#play:hover{
+#play:hover {
   transform: scale(1.05);
 }
 
@@ -378,31 +378,28 @@ body {
   color: var(--gray-text-color);
 }
 
-
 /* Contacts Css */
-.playListBottom{
+.playListBottom {
   background-color: var(--primary-bg-color);
-height: 55%;
-border-bottom-right-radius: 7px;
-border-bottom-left-radius: 7px;
-
+  height: 55%;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
-.contacts{
+.contacts {
   gap: 10vw;
   padding-top: 24px;
 }
 
-.contacts-right{
+.contacts-right {
   margin: 34px;
   gap: 10vw;
   line-height: 2rem;
-
 }
-.contacts-right ul h3{
+.contacts-right ul h3 {
   font-size: 16px;
 }
-.contacts-right ul li{
+.contacts-right ul li {
   list-style: none;
   line-height: 2.2rem;
   font-size: 16px;
@@ -410,18 +407,18 @@ border-bottom-left-radius: 7px;
   color: var(--gray-text-color);
 }
 
-.contacts-right ul li:hover{
+.contacts-right ul li:hover {
   color: var(--white-text-color);
   text-decoration: underline;
 }
 
-.social-media{
+.social-media {
   margin: 34px;
   gap: 1vw;
-  margin-left: 70px; ;
+  margin-left: 70px;
 }
 
-.social-media a i{
+.social-media a i {
   display: flex;
   width: 40px;
   height: 40px;
@@ -431,31 +428,27 @@ border-bottom-left-radius: 7px;
   border-radius: 50%;
 }
 
-.social-media a{
+.social-media a {
   text-decoration: none;
   color: var(--white-text-color);
   font-size: 16px;
 }
 
-.social-media a i:hover{
+.social-media a i:hover {
   background-color: gray;
 }
 
-
-.separation{
+.separation {
   border: 1px solid gray;
   filter: brightness(30%);
 }
 
-.separation{
+.separation {
   width: 68vw;
   margin-left: 20px;
 }
-.coptright{
-  margin: 34px 24px ;
+.coptright {
+  margin: 34px 24px;
   font-size: 14px;
   color: var(--gray-text-color);
-
 }
-
-
