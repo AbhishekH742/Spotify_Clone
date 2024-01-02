@@ -12,6 +12,7 @@ import img5 from "../images/Deep Focus.png";
 
 
 
+
 export default function PlayList() {
   return (
     <div className="right  m-2 rounded">
@@ -65,6 +66,7 @@ export default function PlayList() {
           <Contacts />
         </div>
       </div>
+   
     </div>
   );
 }
