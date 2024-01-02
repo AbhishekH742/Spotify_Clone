@@ -18,7 +18,7 @@ export default function NavBar() {
       </div>
       <div className="user-btn">
         <button className="signUp">Sign Up</button>
-        <button className="login">Login</button>
+        <button className="login">Log in</button>
       </div>
     </nav>
   );

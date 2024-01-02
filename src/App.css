@@ -52,6 +52,31 @@
 .c-bl {
   color: black;
 }
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333; /* Set the background color for the track */
+}
+
+/* Style the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Set the background color for the handle */
+  border-radius: 6px; /* Optional: Add rounded corners to the handle */
+}
+
+/* Optional: Style the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #333;
+}
+
+/* Optional: Style the scrollbar when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
 
 /* End of utility css classes */
 
@@ -192,14 +217,13 @@ body {
 }
 
 .right {
-  width: 73vw;
+  width: 74vw;
   height: 95vh;
 }
 
 .right-bottom {
-  height: 100vh;
-  margin-bottom: 200px;
-  /* overflow: hidden; */
+  max-height: calc(96vh - 60px);
+  overflow-y: scroll;
 }
 
 .nav {
@@ -381,7 +405,7 @@ body {
 /* Contacts Css */
 .playListBottom {
   background-color: var(--primary-bg-color);
-  height: 55%;
+  height: 27vw;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
@@ -447,7 +471,7 @@ body {
   width: 68vw;
   margin-left: 20px;
 }
-.coptright {
+.copyright {
   margin: 34px 24px;
   font-size: 14px;
   color: var(--gray-text-color);

@@ -38,8 +38,8 @@ export default function Contacts() {
         </div>
       </div>
       <div className="separation flex"></div>
-      <div className="coptright">
-      &#169; Soptify AB
+      <div className="copyright">
+      &#169; 2024  Soptify AB
       </div>
     </>
   );
