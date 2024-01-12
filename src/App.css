@@ -77,7 +77,6 @@
   background-color: #777;
 }
 
-
 /* End of utility css classes */
 
 body {
@@ -363,7 +362,7 @@ body {
   align-items: center;
   border-radius: 50%;
   padding: 8px;
-  top: 18vh;
+  top: 20vh;
   right: 22px;
   opacity: 0;
   transition: 0.3s ease-in;
@@ -374,7 +373,7 @@ body {
 }
 .card:hover .play-btn {
   opacity: 1;
-  top: 110px;
+  top: 120px;
 }
 .play-btn:hover {
   transform: scale(1.05);
@@ -383,7 +382,6 @@ body {
 #play {
   width: 20px;
 }
-
 
 .img-tittle {
   height: 13px;
@@ -475,10 +473,9 @@ body {
   color: var(--gray-text-color);
 }
 
+/* Play next prev Btn bar container */
 
- /* Play next prev Btn bar container */
-
- .playBar-container{
+.playBar-container {
   width: 99vw;
   height: 7vh;
   position: absolute;
@@ -490,35 +487,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
-.play-btn-img{
+.play-btn-img {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-#playBtn{
+#playBtn {
   transition: 0.3s ease;
 }
 
-#playBtn:hover{
-    transform: scale(1.3);
-}
-
-#prev{
-  transition: 0.3s ease;
-}
-#prev:hover{
+#playBtn:hover {
   transform: scale(1.3);
 }
 
-#next{
+#prev {
+  transition: 0.3s ease;
+}
+#prev:hover {
+  transform: scale(1.3);
+}
+
+#next {
   transition: 0.3s ease;
   transform: scale(1.3);
 }
-#next:hover{
+#next:hover {
   transform: scale(1.6);
-
 }
