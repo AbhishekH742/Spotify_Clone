@@ -27,13 +27,13 @@ export default function Contacts() {
         </div>
         <div className="social-media flex">
           <a href="/">
-            <i href="#" class="fa fa-instagram"></i>
+            <i href="#" className="fa fa-instagram"></i>
           </a>
           <a href="/">
-            <i href="#" class="fa fa-twitter"></i>
+            <i href="#" className="fa fa-twitter"></i>
           </a>
           <a href="/">
-            <i href="#" class="fa fa-facebook"></i>
+            <i href="#" className="fa fa-facebook"></i>
           </a>
         </div>
       </div>

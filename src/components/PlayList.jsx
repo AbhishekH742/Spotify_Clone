@@ -2,11 +2,17 @@ import React from "react";
 import NavBar from "./NavBar";
 import PlayListCard from "./PlayListCard";
 import Contacts from "./Contacts";
-import img1 from "../images/Peaceful piano.png";
-import img2 from "../images/Beats to think.png";
-import img3 from "../images/Focus flow.png";
-import img4 from "../images/Rap Caviar.png";
-import img5 from "../images/Deep Focus.png";
+import img1 from "../images/songs-image/Kgf.jpeg";
+import img2 from "../images/songs-image/Bhajarangi.jpg";
+import img3 from "../images/songs-image/Kantara.jpeg";
+import img4 from "../images/songs-image/kgf 2.jpeg";
+import img5 from "../images/songs-image/Yuvaratna.jpeg";
+import kgf from "../Songs/KGF.mp3";
+import Hanuman from "../Songs/Hanuman.mp3";
+import Kantara from "../Songs/Bhoot Kola.mp3";
+import Dheera from "../Songs/Dheera.mp3";
+import Neenadena from "../Songs/Neenadena.mp3";
+
 
 
 
@@ -14,6 +20,7 @@ import img5 from "../images/Deep Focus.png";
 
 
 export default function PlayList() {
+
   return (
     <div className="right  m-2 rounded">
       <NavBar />
@@ -32,32 +39,41 @@ export default function PlayList() {
           <div className="playListCard flex ">
             <PlayListCard
               imgURL={img1}
-              imgTittle={"Peaceful Piano"}
-              imgDesc={"Peaceful piano to help you slow down, breathe, and..."}
+              imgTittle={"KGF Toofan"}
+              imgDesc={"Listen to Toofan online. Toofan is a Hindi language song ..."}
+              audioSrc = {kgf}
             />
 
             <PlayListCard
               imgURL={img2}
-              imgTittle={"Beats to think to"}
-              imgDesc={"Focus with deep techno and tech house."}
+              imgTittle={"Jai Bajarangi"}
+              imgDesc={"The High Energy Song Lyrical Video Jai Bajarangi From Hatrick Hero ..."}
+              audioSrc = {Hanuman}
+             
             />
 
             <PlayListCard
               imgURL={img3}
-              imgTittle={"Focus Flow"}
-              imgDesc={"Uptempo instrumental hip hop beats."}
+              imgTittle={"Kantara"}
+              imgDesc={"song 'Karma' from Tamil movie 'Kantara' starring Rishab Shetty ..."}
+              audioSrc = {Kantara}
+
             />
 
             <PlayListCard
               imgURL={img4}
-              imgTittle={"RapCaviar"}
-              imgDesc={"New music from Lil Baby, Gucci Mane and DaBaby"}
+              imgTittle={"Dheera Dheera"}
+              imgDesc={"Dheera Dheera Song with Lyrics from Tamil Movie KGF Chapter 1 ..."}
+              audioSrc = {Dheera}
+
             />
 
             <PlayListCard
               imgURL={img5}
-              imgTittle={"Deep Focus"}
-              imgDesc={"Keep calm and focus with ambient and post-rock music"}
+              imgTittle={"Neenadena Naa"}
+              imgDesc={"Neenaade Naa is a Kannada language song and is sung by Thaman S ..."}
+              audioSrc = {Neenadena}
+
             />
           </div>
         </div>

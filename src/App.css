@@ -55,6 +55,7 @@
 /* Style the scrollbar track */
 ::-webkit-scrollbar {
   width: 12px;
+  
 }
 
 ::-webkit-scrollbar-track {
@@ -401,7 +402,7 @@ body {
 /* Contacts Css */
 .playListBottom {
   background-color: var(--primary-bg-color);
-  height: 27vw;
+  height: 31vw;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
@@ -476,12 +477,13 @@ body {
 /* Play next prev Btn bar container */
 
 .playBar-container {
-  width: 99vw;
+  width: 96vw;
   height: 7vh;
   position: absolute;
   background-color: black;
-  bottom: 0;
+  bottom: 5px;
   border-radius: 10px;
+  padding: 10px;
   z-index: 10;
   box-shadow: 0 0 10px black;
   display: flex;
@@ -494,6 +496,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+button{
+  border: none;
+}
+.play-btn{
+  padding: 25px;
 }
 
 #playBtn {
