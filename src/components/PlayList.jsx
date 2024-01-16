@@ -13,14 +13,7 @@ import Kantara from "../Songs/Bhoot Kola.mp3";
 import Dheera from "../Songs/Dheera.mp3";
 import Neenadena from "../Songs/Neenadena.mp3";
 
-
-
-
-
-
-
 export default function PlayList() {
-
   return (
     <div className="right  m-2 rounded">
       <NavBar />
@@ -40,40 +33,46 @@ export default function PlayList() {
             <PlayListCard
               imgURL={img1}
               imgTittle={"KGF Toofan"}
-              imgDesc={"Listen to Toofan online. Toofan is a Hindi language song ..."}
-              audioSrc = {kgf}
+              imgDesc={
+                "Listen to Toofan online. Toofan is a Hindi language song ..."
+              }
+              audioSrc={kgf}
             />
 
             <PlayListCard
               imgURL={img2}
               imgTittle={"Jai Bajarangi"}
-              imgDesc={"The High Energy Song Lyrical Video Jai Bajarangi From Hatrick Hero ..."}
-              audioSrc = {Hanuman}
-             
+              imgDesc={
+                "The High Energy Song Lyrical Video Jai Bajarangi From Hatrick Hero ..."
+              }
+              audioSrc={Hanuman}
             />
 
             <PlayListCard
               imgURL={img3}
               imgTittle={"Kantara"}
-              imgDesc={"song 'Karma' from Tamil movie 'Kantara' starring Rishab Shetty ..."}
-              audioSrc = {Kantara}
-
+              imgDesc={
+                "song 'Karma' from Tamil movie 'Kantara' starring Rishab Shetty ..."
+              }
+              audioSrc={Kantara}
             />
 
             <PlayListCard
               imgURL={img4}
               imgTittle={"Dheera Dheera"}
-              imgDesc={"Dheera Dheera Song with Lyrics from Tamil Movie KGF Chapter 1 ..."}
-              audioSrc = {Dheera}
-
+              imgDesc={
+                "Dheera Dheera Song with Lyrics from Tamil Movie KGF Chapter 1 ..."
+              }
+              audioSrc={Dheera}
             />
 
             <PlayListCard
               imgURL={img5}
               imgTittle={"Neenadena Naa"}
-              imgDesc={"Neenaade Naa is a Kannada language song and is sung by Thaman S ..."}
-              audioSrc = {Neenadena}
-
+              imgDesc={
+                "Neenaade Naa is a Kannada language song and is sung by Thaman S ..."
+              }
+              audioSrc={Neenadena}
             />
           </div>
         </div>
@@ -82,7 +81,6 @@ export default function PlayList() {
           <Contacts />
         </div>
       </div>
-   
     </div>
   );
 }
