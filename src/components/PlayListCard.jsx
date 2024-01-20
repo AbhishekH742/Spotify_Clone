@@ -6,20 +6,19 @@ export default function PlayListCard(props) {
   // const [isClicked, setIsClicked] = useState(false);
 
   let audioElement;
-  const playSong = () => {
-     
-    if (!audioElement) {
-      audioElement = new Audio(props.audioSrc);
-    }
-
+  const playSong = () => { 
+ 
+    audioElement = new Audio(props.audioSrc);
     if (isPlaying) {
       audioElement.pause();
-      
+      setIsPlaying((isPlaying) => !isPlaying);
     } else {
       audioElement.play();
+      setIsPlaying((isPlaying) => !isPlaying);
+
     }
 
-    setIsPlaying(!isPlaying);
+
   };
 
   return (
